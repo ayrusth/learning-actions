@@ -27,7 +27,7 @@ jobs:
           npm install --save-dev eslint eslint-config-next
       -  name: Run Eslint
          run: npm run lint
-         run: npx eslint .
+         # run: npx eslint .
 
       -  name: Test Run  
          run: npm test
