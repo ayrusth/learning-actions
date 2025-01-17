@@ -22,9 +22,7 @@ jobs:
          uses: actions/setup-node@v3
          with:
            node-version: '18.x'
-      -  run: |
-          npm install && \
-          npm install --save-dev eslint eslint-config-next
+      -  run: npm install --save-dev eslint eslint-config-next
       -  name: Run Eslint
         #  run: npm run lint
            run: npx eslint .
