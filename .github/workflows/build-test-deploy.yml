@@ -24,8 +24,8 @@ jobs:
            node-version: '18.x'
       -  run: npm install --save-dev eslint eslint-config-next
       -  name: Run Eslint
-        #  run: npm run lint
-           run: npx eslint .
+         # run: npm run lint
+         run: npx eslint .
 
       -  name: Test Run  
          run: npm test
