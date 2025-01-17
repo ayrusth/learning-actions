@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "next lint"
+    "test": "next lint",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.2.21",
@@ -16,12 +17,5 @@
   "devDependencies": {
     "eslint": "^9.18.0",
     "eslint-config-next": "^15.1.4"
-  },
-  "eslintConfig": {
-    "extends": "next/core-web-vitals",
-    "rules": {
-      "no-console": "warn",
-      "no-unused-vars": "warn"
-    }
   }
 }
