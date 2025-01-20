@@ -64,6 +64,10 @@ jobs:
       
       -  run: npm install
       -  run: npm run build 
+      # -  run: next export -out out
+
+      -  name: Check out directory
+         run: ls -al ./out
       
       -  name: Upload Artifacts
          uses: actions/upload-pages-artifact@v1
