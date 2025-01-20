@@ -65,7 +65,6 @@ jobs:
       -  run: npm install
       -  run: npm install next@latest
       -  run: npm run build 
-      -  run: next build
       -  run : next export -out out
 
       -  name: Check out directory
