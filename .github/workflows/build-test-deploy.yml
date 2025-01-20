@@ -42,7 +42,7 @@ jobs:
    
    environment:
          name: production
-         url: ${{steps.deployment.output.pages.url}}
+         url: ${{ steps.deployment.output.pages.url }}
 
    runs-on: ubuntu-latest
    
