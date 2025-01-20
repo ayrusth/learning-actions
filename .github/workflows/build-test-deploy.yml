@@ -67,7 +67,7 @@ jobs:
       -  run: npm run export
 
       -  name: List build directory
-      -  run: ls -la ./out
+      # -  run: ls -la ./out
       
       -  name: Upload Artifacts
          uses: actions/upload-pages-artifact@v1
