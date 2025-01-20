@@ -72,7 +72,7 @@ jobs:
       
       -  name: Deploy Pages
          id: deployment
-         uses:actions/deploy-pages@v1
+         uses: actions/deploy-pages@v1
 
 
     
