@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export":"next export",
-    "output": "output export",
+    "export": "next export",
     "start": "next start",
     "test": "eslint .",
     "lint": "eslint ."
