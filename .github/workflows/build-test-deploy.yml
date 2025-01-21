@@ -78,7 +78,7 @@ jobs:
                   exit 1
                fi
          - name: Create output directory
-            run: mkdir -p ./out
+           run: mkdir -p ./out
 
          -  name: Upload Artifacts
             uses: actions/upload-pages-artifact@v1
