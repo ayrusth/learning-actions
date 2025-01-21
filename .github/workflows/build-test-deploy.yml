@@ -18,8 +18,9 @@ jobs:
     steps:
       -  name: Checkout Repo
          uses: actions/checkout@v3
+
       -  name: Setup Node.js Environment
-         uses: actions/setup-node@v3
+         uses: actions/setup-node@v
          with:
            node-version: '18.x'
       -  run: 
@@ -32,7 +33,8 @@ jobs:
 
       -  name: Test Run  
          run: npm test
-  deploy:
+  
+   deploy:
    needs: test
 
    permissions:
@@ -53,7 +55,7 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
 
       -  name: Use Node.js
-         uses: actions/setup-node@v3
+         uses: actions/setup-node@v
          with:
             node-version: '18.x'
       
@@ -66,13 +68,15 @@ jobs:
             npm install
             npm  run build 
             # npm run export
-            
+
       -  name: Verify Output Directory
          run: |
             if[-d "./out"]; then
                echo "Directory ./out exists."
             else
-               echo "Directory ./out does not exist. Check the build step."
+            -  name: Create output directory
+               run: mkdir -p ./out
+               # echo "Directory ./out does not exist. Check the build step."
                exit 1
             fi
       
