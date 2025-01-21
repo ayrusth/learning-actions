@@ -17,5 +17,5 @@ module.exports = {
     // Disabling eslint during build if necessary (optional)
     ignoreDuringBuilds: true,
   },
-  outpur: 'export',
+  output: 'export',
 };
