@@ -34,7 +34,7 @@ jobs:
       -  name: Test Run  
          run: npm test
   
-   deploy:
+  deploy:
       needs: test
 
       permissions:
