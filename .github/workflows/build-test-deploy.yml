@@ -66,6 +66,15 @@ jobs:
             npm install
             npm  run build 
             # npm run export
+            
+      -  name: Verify Output Directory
+         run: |
+            if[-d "./out"]; then
+               echo "Directory ./out exists."
+            else
+               echo "Directory ./out does not exist. Check the build step."
+               exit 1
+            fi
       
       -  name: Upload Artifacts
          uses: actions/upload-pages-artifact@v1
