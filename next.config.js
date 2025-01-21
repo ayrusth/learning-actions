@@ -5,17 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
-
-
-module.exports = {
   eslint: {
     // Disabling eslint during build if necessary (optional)
     ignoreDuringBuilds: true,
   },
-  output: 'export',
-};
+  reactStrictMode: true,
+}
+
+module.exports = nextConfig
