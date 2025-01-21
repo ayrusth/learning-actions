@@ -64,7 +64,6 @@ jobs:
       
       -  run: npm install
       -  run: npm run build 
-      -  run: npm run export
 
       -  name: Check out directory
          run: ls -al ./out
