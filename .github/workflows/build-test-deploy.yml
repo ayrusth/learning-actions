@@ -71,7 +71,7 @@ jobs:
 
          -  name: Verify Output Directory
             run: |
-               if[-d "./out"]; then
+               if [-d "./out"]; then
                   echo "Directory ./out exists."
                else
                   echo "Directory ./out does not exist. Check the build step."
