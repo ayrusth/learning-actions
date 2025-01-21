@@ -63,8 +63,8 @@ jobs:
             static_sit_generator: next
       
       -  run: |
-            npm run install
-            npm run build 
+            npm install
+            npm build 
 
       -  name: Check out directory
          run: ls -al
