@@ -66,15 +66,14 @@ jobs:
             npm install
             npm  run build 
             # npm run export
-
-      -  name: Check out directory
-         run: ls -al
       
       -  name: Upload Artifacts
          uses: actions/upload-pages-artifact@v1
          with:
             path: "./out"
-      
+       
+      -  name: Check out directory
+          run: ls -al
       -  name: Deploy Pages
          id: deployment
          uses: actions/deploy-pages@v1
