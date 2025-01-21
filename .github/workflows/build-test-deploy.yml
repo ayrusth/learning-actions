@@ -62,16 +62,17 @@ jobs:
          with:
             static_sit_generator: next
       
-      -  run: npm install
-      -  run: npm run build 
+      -  run: |
+            npm run install
+            npm run build 
 
-      # -  name: Check out directory
-      #    run: ls -al ./out
+      -  name: Check out directory
+         run: ls -al
       
       -  name: Upload Artifacts
          uses: actions/upload-pages-artifact@v1
          with:
-            path: "./out"
+            path: ./out
       
       -  name: Deploy Pages
          id: deployment
