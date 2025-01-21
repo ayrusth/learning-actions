@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
+    "export": "output export",
     "test": "eslint .",
     "lint": "eslint ."
   },
