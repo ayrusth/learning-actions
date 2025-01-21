@@ -73,7 +73,7 @@ jobs:
             path: "./out"
        
       -  name: Check out directory
-          run: ls -al
+         run: ls -al
       -  name: Deploy Pages
          id: deployment
          uses: actions/deploy-pages@v1
